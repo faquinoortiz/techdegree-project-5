@@ -15,7 +15,7 @@ fetchData().then(data => {
 
 //Function will fetch data from the Random User API
 async function fetchData() {
-  const response = await fetch('https://randomuser.me/api/?results=12');
+  const response = await fetch('https://randomuser.me/api/?results=12&nat=us');
   const data = await response.json();
   return data.results;
 }
