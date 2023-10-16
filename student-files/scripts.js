@@ -74,7 +74,7 @@ let currentIndex;
     function closeModal(modal) {
       document.body.removeChild(modal);
     }
-  //Function is used to navigate to the previous employee, when the "Previous" button is selected on the modal window
+  //Function is used to navigate to the previous employee's info, when the "Previous" button is selected on the modal window
     function showPreviousUser(modal, currentIndex) {
       currentIndex = (currentIndex - 1 + users.length) % users.length;
       const user = users[currentIndex];
